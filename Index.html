@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LOGIN-Proyecto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+    minimum-scale=1,maximum-scale=1,
+    user-scalable=no"/>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./materialize_v1/css/materialize.min.css" rel="stylesheet">
+    <link href="./fontAwesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./jscript/validetta/validetta.min.css" rel="stylesheet">
+    <link href="./jscript/confirm330/css/jquery-confirm.css" rel="stylesheet">
+    <link href="./css/general.css" rel="stylesheet">
+    <script src="./jscript/jquery-3.3.1.min.js"></script>
+    <script src="./materialize_v1/js/materialize.min.js"></script>
+    <script src="./jscript/validetta/validetta.min.js"></script>
+    <script src="./jscript/validetta/validettaLang-es-ES.js"></script>
+    <script src="./jscript/confirm330/js/jquery-confirm.js"></script>
+    <script src="./js/Index.js"></script>
+</head>
+<body>
+<header>
+    <img class="responsive-img" src="./imgs/HEADER.gif">
+</header>
+<main class="valign-wrapper">
+<div class="container">
+    <br><br><br><br><br><br>
+    <!--El contenido de la página va aquí-->
+    <div class="row">
+        <form id="formularioLogin" autocomplete="off">
+        <div class="col s12 m6 offset-m3 input-field ">
+            <i class="fa fa-user prefix"></i>
+            <label>Usuario</label>
+            <input type="text" id="usuario" name="usuario" data-validetta="required,minLength[5],maxLength[20]">
+        </div>
+        <div class="col s12 m6 offset-m3 input-field">
+            <i class="fa fa-key prefix"></i>
+            <label>Contrase&ntilde;a</label>
+            <input type="password" id="contrasena" name="contrasena" data-validetta="required">
+            <p>
+                <label>
+                    <input type="checkbox" class="filled-in" id="show">
+                    <span>Mostrar Contrase&ntilde;a</span>
+                </label>
+            </p>
+        </div>
+        <div class="col s12 m6 offset-m3 input-field">
+                <button type="submit" id="btnLogin" class="btn red white-text" style="width:100%">Entrar</button>
+        </div>
+        </form>
+    </div>
+    <br><br><br><br><br><br>
+</div>
+</main>
+<footer class="page-footer red darken-4">
+        <div class="container">
+          <div class="row">
+            <div class="col l4 s12">
+              <h5 class="black-text">Informaci&oacute;n:</h5>
+              <p class="black-text text-lighten-4">
+                Sistema de informaci&oacute;n web que permite la gesti&oacute;n y operaci&oacute;n
+                del proceso institucional de "Entrega de Reconocimientos al M&eacute;rito Polit&eacute;cnico".
+                <br>
+                <h5 class="black-text">Autores: ...</h5>
+              </p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="black-text">Mapas:</h5>
+              <ul>
+                <li><a class="black-text text-lighten-5" 
+                    href="https://www.google.com.mx/maps/dir/19.4992027,-98.9049301/Direcci%C3%B3n+General
+                    +IPN,+Luis+Enrique+Erro+S%2FN,+Gustavo+A.+Madero,+Unidad+Profesional+Adolfo+L%C3%B3pez
+                    +Mateos,+07738+Ciudad+de+M%C3%A9xico,+CDMX/@19.5349257,-99.1618718,11z/data=!3m1!4b1!4
+                    m9!4m8!1m1!4e1!1m5!1m1!1s0x85d1f9c97973a903:0x542f671f1ddbc566!2m2!1d-99.1393461!2d19.5071588">
+                    Direcci&oacute;n General IPN</a>
+                </li>
+                <li><a class="black-text text-lighten-5" 
+                    href="https://www.google.com.mx/maps/dir/19.4992027,-98.9049301/Centro+Cultural+Jaime+
+                    Torres+Bodet,+Av.+Wilfrido+Massieu+s%2Fn,+Nueva+Industrial+Vallejo,+07738+Ciudad+de+M%
+                    C3%A9xico,+CDMX/@19.5349257,-99.1584291,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x
+                    85d1f9b0903dd831:0xef0362ce680787c8!2m2!1d-99.1350508!2d19.4961957">
+                    Centro Cultural Jaime Torres Bodet</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2018 Copyright / ESCOM
+          <a class="grey-text text-lighten-4 right" href="https://www.ipn.mx/">IPN</a>
+          </div>
+        </div>
+</footer>
+</body>
+</html>

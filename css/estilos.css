@@ -1,0 +1,8 @@
+.contenedor {
+	width: 1000px;
+	height: 400px;
+	margin: 70px auto;
+	padding: 10px;
+	overflow: auto;
+	border-radius: 19px;
+}
